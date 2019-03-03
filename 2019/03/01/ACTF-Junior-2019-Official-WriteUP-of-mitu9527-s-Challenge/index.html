@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Fri Mar 01 2019 15:26:39 GMT+0800" />
-        <meta property="article:modified_time" content="Sun Mar 03 2019 14:56:13 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Mar 03 2019 20:18:43 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html",
     "headline": "ACTF Junior 2019 Official WriteUP of mitu9527's Challenge ",
     "datePublished": "Fri Mar 01 2019 15:26:39 GMT+0800",
-    "dateModified": "Sun Mar 03 2019 14:56:13 GMT+0800",
+    "dateModified": "Sun Mar 03 2019 20:18:43 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "mitu",
@@ -504,7 +504,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"字典.txt"</span>,<span class="string">'w'</span>) <span class="keyword">as</span> file:</span><br><span class="line">    charset = string.digits  <span class="comment"># + string.ascii_letters</span></span><br><span class="line">    nums = itertools.product(charset,repeat=<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">        num = <span class="string">""</span>.join(i)</span><br><span class="line">        file.write(<span class="string">'afctf&#123;'</span>+num+<span class="string">'&#125;\n'</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="cheat"><a href="#cheat" class="headerlink" title="cheat"></a>cheat</h2><p>​    题目算是说了找不到密码，就要想到可能是伪加密。（伪加密：实际上并没有加密，而只是修改了某个标志位，在window下显示被加密）</p>
 <p>伪加密：下面的标志位为奇数则伪加密，为偶数则没有加密</p>
-<p><img src="/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/C:/Users/hp/Desktop/2019%E5%AF%92%E5%81%87/%E5%AF%92%E5%81%87%E8%B5%9B-%E5%87%BA%E9%A2%98/misc/misc.assets/1549521508334.png" alt="1549521508334"></p>
+<p><img src="/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/1549521508334.png" alt="1549521508334"></p>
 <p>​    解决方式很简单，但是要记住，把图中的01改成偶数即可。</p>
 <p>​    解密后就很简单啦，只有点和线，就要脑补到摩尔斯密码，百度一下，解密完再base16解密一下即可。这里为什么要出题的时候要base16加密呢，是因为摩尔斯密码并没有区分什么大小写，和标点符号，所以要通过编码来解决这个问题。</p>
 <h2 id="difference"><a href="#difference" class="headerlink" title="difference"></a>difference</h2><p>​    这一题纯粹考验工具的使用，两个文件不一样的地方就是flag。这里可以使用010editor里的compare，当然还有很多别的工具。</p>
