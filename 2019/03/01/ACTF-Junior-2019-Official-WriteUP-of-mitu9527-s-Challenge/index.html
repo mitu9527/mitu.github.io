@@ -37,7 +37,7 @@
     
     <title>
         
-            关于文件包含为ip地址 | 
+            ACTF Junior 2019 Official WriteUP of mitu9527&#39;s Challenge  | 
         
         mitu9527
     </title>
@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="mitu">
     <meta name="description" itemprop="description" content="to be continued...">
-    <meta name="keywords" content=",测试结果">
+    <meta name="keywords" content=",WP">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -231,18 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="关于文件包含为ip地址 | mitu9527">
+    <meta property="og:title" content="ACTF Junior 2019 Official WriteUP of mitu9527&#39;s Challenge  | mitu9527">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="to be continued...">
-    <meta property="og:article:tag" content="测试结果"> 
+    <meta property="og:article:tag" content="WP"> 
 
     
-        <meta property="article:published_time" content="Tue Aug 14 2018 22:42:18 GMT+0800" />
-        <meta property="article:modified_time" content="Tue Aug 14 2018 22:42:48 GMT+0800" />
+        <meta property="article:published_time" content="Fri Mar 01 2019 15:26:39 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Mar 03 2019 14:56:13 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="关于文件包含为ip地址 | mitu9527">
+    <meta name="twitter:title" content="ACTF Junior 2019 Official WriteUP of mitu9527&#39;s Challenge  | mitu9527">
     <meta name="twitter:description" content="to be continued...">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,10 +262,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html",
-    "headline": "关于文件包含为ip地址",
-    "datePublished": "Tue Aug 14 2018 22:42:18 GMT+0800",
-    "dateModified": "Tue Aug 14 2018 22:42:48 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html",
+    "headline": "ACTF Junior 2019 Official WriteUP of mitu9527's Challenge ",
+    "datePublished": "Fri Mar 01 2019 15:26:39 GMT+0800",
+    "dateModified": "Sun Mar 03 2019 14:56:13 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "mitu",
@@ -283,7 +283,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",测试结果",
+    "keywords": ",WP",
     "description": "to be continued...",
 }
 </script>
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#关于文件包含为ip地址"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于文件包含为ip地址</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#背景"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">背景</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#测试"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">测试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结论"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">结论</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Misc"><span class="post-toc-number">1.</span> <span class="post-toc-text">Misc</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#签到题————-听说长一点大家才看得见"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">签到题————-听说长一点大家才看得见</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#keypad"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">keypad</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#base家族"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">base家族</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#wordHidden"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">wordHidden</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Exhaustive"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Exhaustive</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cheat"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">cheat</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#difference"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">difference</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#xor"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">xor</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Wireshark"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">Wireshark</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#draw"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">draw</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Forensics"><span class="post-toc-number">2.</span> <span class="post-toc-text">Forensics</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#log"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">log</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Visiting-history"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Visiting history</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hidden"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Hidden</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#jpg"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">jpg</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#png"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">png</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#can’t"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">can’t</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -381,7 +381,7 @@
         
     
             <p class="article-headline-p">
-                关于文件包含为ip地址
+                ACTF Junior 2019 Official WriteUP of mitu9527's Challenge 
             </p>
         </div>
 
@@ -400,7 +400,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>mitu</strong>
-        <span>8月 14, 2018</span>
+        <span>3月 01, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -424,7 +424,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/测试结果/">测试结果</a>
+        <a class="post_tag-link" href="/tags/WP/">WP</a>
     </ul>
     
 
@@ -440,7 +440,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=关于文件包含为ip地址&url=http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=ACTF Junior 2019 Official WriteUP of mitu9527&#39;s Challenge &url=http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -449,7 +449,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=关于文件包含为ip地址&url=http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html&via=mitu" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=ACTF Junior 2019 Official WriteUP of mitu9527&#39;s Challenge &url=http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html&via=mitu" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -458,7 +458,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -467,7 +467,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/08/14/关于文件包含为ip地址/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -491,20 +491,46 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="关于文件包含为ip地址"><a href="#关于文件包含为ip地址" class="headerlink" title="关于文件包含为ip地址"></a>关于文件包含为ip地址</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>文件包含是ctf中代码审计经常遇见的，而且会有如下情况。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//error_reporting(0);</span></span><br><span class="line"></span><br><span class="line">$id=$_GET[<span class="string">'id'</span>];</span><br><span class="line"></span><br><span class="line">$data = @file_get_contents($id,<span class="string">'r'</span>);</span><br><span class="line"><span class="keyword">echo</span> $data;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">if</span>($data==<span class="string">"1112 is a nice lab!"</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">print</span> <span class="string">"win win win win"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">print</span> <span class="string">"work harder!harder!harder!"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>要我们提交的是文件名，而内容却要符合条件，这时最好的办法是用<code>php://input</code>伪协议来解决。然而我再看wp时遇到了另外一种解决方法，就是在自己的服务器上传含有相应内容的文件，然后通过包含该文件来解决。</p>
-<p>大致如下：<code>?id=http://192.168.232.134:8889/1.txt</code>，<code>192.168.232.134</code>为自己服务器的ip地址，<code>1.txt</code>的内容为<code>1112 is a nice lab!</code>，这样就可以实现绕过了。</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>然而其实原题的条件更为苛刻一点</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">error_reporting(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;!--index.phps--&gt;"</span>;</span><br><span class="line"></span><br><span class="line">$id=$_GET[<span class="string">'id'</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(stripos($a,<span class="string">'.'</span>))</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'Hahahahahaha'</span>;</span><br><span class="line">	<span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$data = @file_get_contents($a,<span class="string">'r'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>($data==<span class="string">"1112 is a nice lab!"</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">require</span>(<span class="string">"flag.txt"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">print</span> <span class="string">"work harder!harder!harder!"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>stripos()</code>函数导致我们输入的内容里不能出现<code>.</code>，那我们就没法用ip来解决了，而且文件名也是不行的，然后我就看见一个说法，即使用<code>十进制ip</code>来绕过。</p>
-<p>下面的结论我是在以下实验条件（php5.5.12，Apache2.4.9）中得到的，不知道是否和版本有关系。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">例如以下的ip变化：192.168.232.134</span><br><span class="line">十六进制 = C0A8E886</span><br><span class="line">十进制 = 3232295046</span><br><span class="line">二进制 = 11000000101010001110100010000110</span><br></pre></td></tr></table></figure>
-<p>我们可以通过直接输入<code>http://3232295046:8889/1.txt</code>和<code>http://0xC0A8E886:8889/1.txt</code>来进行访问。</p>
-<p>然而，却无法通过<code>?id=http://3232295046:8889/1.txt</code>和<code>?id=http://0xC0A8E886:8889/1.txt</code>来进行文件包含，也不知道是不是版本问题。</p>
-<p>虽然ip地址无法绕过，但文件名是可以绕过的：</p>
-<p>众所周知，直接访问一个ip地址是默认访问<code>index</code>，然后在文件包含中只输入ip地址，而加上文件名，那么也是会默认访问<code>index</code>的，例如<code>?id=http://3232295046:8889/</code>，就会自动去读取<code>index.php</code>或<code>index.html</code>，而且，我们也可以不给文件名加上后缀来进行读取，也一样可以成功的，就像<code>?id=http://3232295046:8889/flag</code>，也会成功读取flag的内容的。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>综上，结论是：在（php5.5.12，Apache2.4.9）版本下，函数<code>file_get_contents()</code>用来读取别人的服务器上的文件时，不能用十进制ip和十六进制ip来读取。在不指定文件的情况下回默认读取<code>index</code>，也可以访问没有后缀名的文件。</p>
+        <p>​    鉴于本人的能力和时间问题，所以出的题目都蛮简单的，都算是入门题吧。</p>
+<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="签到题————-听说长一点大家才看得见"><a href="#签到题————-听说长一点大家才看得见" class="headerlink" title="签到题————-听说长一点大家才看得见"></a>签到题————-听说长一点大家才看得见</h2><p>​    签到题，额，推广实验室的微信公众号，没啥好说的。</p>
+<h2 id="keypad"><a href="#keypad" class="headerlink" title="keypad"></a>keypad</h2><p>​    这一题蛮简单的，题目（暴雪梗，你们没有手机吗？）和提示都基本是明示了。就是手机的九宫格键盘宫格密码：例如21表示a，33表示f。</p>
+<h2 id="base家族"><a href="#base家族" class="headerlink" title="base家族"></a>base家族</h2><p>​    送分题+1，直接百度base解密，然后base64,32,16分别来一次就好了，算是为了科普base的编码吧。</p>
+<h2 id="wordHidden"><a href="#wordHidden" class="headerlink" title="wordHidden"></a>wordHidden</h2><p>​    没啥好说的，flag分成两部分</p>
+<p>上半部分：afctf{word_Hid存放在备注里面</p>
+<p>下半部分：den_haaaaaaa}设置为隐藏字体</p>
+<p>​    但是我看到了一些神奇的操作，把word改名为.zip后居然可以在里面的xml配置文件中找到备注里的flag，貌似又懂了一点word的结构，感觉又是一个出题点。</p>
+<h2 id="Exhaustive"><a href="#Exhaustive" class="headerlink" title="Exhaustive"></a>Exhaustive</h2><p>​    压缩包字典攻击。使用的工具是<code>ARCHPR</code>，算是蛮常见的工具</p>
+<p>​    这一题纯粹是想要锻炼一下写脚本生成密码的能力，又或者是让新生了解一下穷举大法好。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"字典.txt"</span>,<span class="string">'w'</span>) <span class="keyword">as</span> file:</span><br><span class="line">    charset = string.digits  <span class="comment"># + string.ascii_letters</span></span><br><span class="line">    nums = itertools.product(charset,repeat=<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">        num = <span class="string">""</span>.join(i)</span><br><span class="line">        file.write(<span class="string">'afctf&#123;'</span>+num+<span class="string">'&#125;\n'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="cheat"><a href="#cheat" class="headerlink" title="cheat"></a>cheat</h2><p>​    题目算是说了找不到密码，就要想到可能是伪加密。（伪加密：实际上并没有加密，而只是修改了某个标志位，在window下显示被加密）</p>
+<p>伪加密：下面的标志位为奇数则伪加密，为偶数则没有加密</p>
+<p><img src="/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/C:/Users/hp/Desktop/2019%E5%AF%92%E5%81%87/%E5%AF%92%E5%81%87%E8%B5%9B-%E5%87%BA%E9%A2%98/misc/misc.assets/1549521508334.png" alt="1549521508334"></p>
+<p>​    解决方式很简单，但是要记住，把图中的01改成偶数即可。</p>
+<p>​    解密后就很简单啦，只有点和线，就要脑补到摩尔斯密码，百度一下，解密完再base16解密一下即可。这里为什么要出题的时候要base16加密呢，是因为摩尔斯密码并没有区分什么大小写，和标点符号，所以要通过编码来解决这个问题。</p>
+<h2 id="difference"><a href="#difference" class="headerlink" title="difference"></a>difference</h2><p>​    这一题纯粹考验工具的使用，两个文件不一样的地方就是flag。这里可以使用010editor里的compare，当然还有很多别的工具。</p>
+<h2 id="xor"><a href="#xor" class="headerlink" title="xor"></a>xor</h2><p>​    这一题我来挨打了，我在比赛结束后看到你们交的wp，我才发现自己题目出的有问题，先说一下这道题目的思路：很简单，直接两个文件异或即可。然后我出题的方法就是先写好flag，然后再写一句长度和flag一样的语句<code>flag_not_here_hhhhhaaaaaaa</code>，而后两者异或，得到第三句话，然后题目提供的文件就是后两个语句的文件。具体代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sxor</span><span class="params">(s1,s2)</span>:</span>    </span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(chr(ord(a) ^ ord(b)) <span class="keyword">for</span> a,b <span class="keyword">in</span> zip(s1,s2))</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'B.txt'</span>,<span class="string">'w'</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(sxor(<span class="string">'afctf&#123;sooooo_eeeeeasy_xor&#125;'</span>,<span class="string">'flag_not_here_hhhhhaaaaaaa'</span>))</span><br></pre></td></tr></table></figure>
+<p>​    这里的思路很没什么问题，但是出来的结果确实生成的文件B.txt的长度却比A.txt多了两个字节，这不科学啊！我当初没有仔细查看长度，然后直接运行了解决的代码，是可以正常跑出结果来的，所以这里疏忽了，让这个错误一直存活着。</p>
+<p>​    然后今天认真排查了半天，终于知道是什么问题了。原因是windows系统的锅，众所周知，windows下的换行符十六进制是0D0A，而我在windwos下异或出来中就恰好有换行符0A，并且我是转换成字符串写入文件中，所以本来一个字节的0A就变成了0D0A，而里面异或后有两个换行符，所以就多了两个字节，绝望脸。</p>
+<p>​    解决方式就是在linux中运行该python程序，毕竟linux中的换行符就是0A，所以不会出现这种神坑。。</p>
+<p>​    解决该题的代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sxor</span><span class="params">(s1,s2)</span>:</span>    </span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(chr(ord(a) ^ ord(b)) <span class="keyword">for</span> a,b <span class="keyword">in</span> zip(s1,s2))</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'A.txt'</span>,<span class="string">'r'</span>) <span class="keyword">as</span> file1:</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'B.txt'</span>,<span class="string">'r'</span>) <span class="keyword">as</span> file2:</span><br><span class="line">        print(sxor(file1.read(),file2.read()))</span><br></pre></td></tr></table></figure>
+<h2 id="Wireshark"><a href="#Wireshark" class="headerlink" title="Wireshark"></a>Wireshark</h2><p>​    直接搜索afctf即可。</p>
+<p>​    但是这里也看到了一些骚操作，因为我当初是用get请求来保存flag的，所以可以用导出对象的方法来找到flag，更有人用string来找到flag。神奇的一匹。</p>
+<h2 id="draw"><a href="#draw" class="headerlink" title="draw"></a>draw</h2><p>​    这题不难，就单纯是为了考验写脚本能力的，题目给的文件是(R,G,B)，只要把其转为图形即可，然后扫描二维码。一共67600，平分一下就是260。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> operator <span class="keyword">import</span> mod</span><br><span class="line"></span><br><span class="line">width=<span class="number">260</span></span><br><span class="line">heigh=<span class="number">260</span></span><br><span class="line">im=Image.new(<span class="string">'RGB'</span>, (heigh,width), <span class="string">'#ffffff'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'flag.txt'</span>,<span class="string">'r'</span>) <span class="keyword">as</span> file:</span><br><span class="line">    coordinate=[line.split(<span class="string">','</span>) <span class="keyword">for</span> line <span class="keyword">in</span> file.readlines()]</span><br><span class="line"></span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> h <span class="keyword">in</span> range(heigh):</span><br><span class="line">    <span class="keyword">for</span> w <span class="keyword">in</span> range(width):</span><br><span class="line">        pixel=im.getpixel((w,h))</span><br><span class="line">        im.putpixel((w,h),(int(coordinate[num][<span class="number">0</span>]),int(coordinate[num][<span class="number">1</span>]),int(coordinate[num][<span class="number">2</span>])))</span><br><span class="line">        num += <span class="number">1</span></span><br><span class="line">im.save(<span class="string">'111.png'</span>)</span><br><span class="line">im.close()</span><br></pre></td></tr></table></figure>
+<h1 id="Forensics"><a href="#Forensics" class="headerlink" title="Forensics"></a>Forensics</h1><h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><p>​    这题其实很简单，直接查看系统日志，然后在里面寻找即可，分值高的原因是，windows的日志上限很小，就2M，要是最后在来弄这个的话，是有可能找不到的。</p>
+<h2 id="Visiting-history"><a href="#Visiting-history" class="headerlink" title="Visiting history"></a>Visiting history</h2><p>​    简介和题目都说了是访问历史，然后也只有一个游览器edge，直接在edge里的访问历史看就好了，网页名字都直接是flag了，然后在注释中，查看源码即可。</p>
+<h2 id="Hidden"><a href="#Hidden" class="headerlink" title="Hidden"></a>Hidden</h2><p>​    啥也不好了，隐藏，隐藏文件，所以设置以下隐藏文件可见即可。内容是ascii码转为16进制。</p>
+<h2 id="jpg"><a href="#jpg" class="headerlink" title="jpg"></a>jpg</h2><p>​    jpg图片的结构特点，FFD8开头，FFD9作为图片的结束，在FFD9后面加入任何东西不会影响图片的显示。</p>
+<p>​    本题用010editor打开jpg图片，发现ffd9后面还有内容，再看内容的开头，发现是一个压缩包，将其拷出来即可，压缩包密码在备注里。</p>
+<p>​    打开后可以获得第一个flag，然后里面还有一张png图片。</p>
+<p>​    这张图片就纯粹靠经验，一个一个方法试过去，又或者可以通过16进制看图片，发现里面的结构有特殊的块，所以可以去想着去查看图层。</p>
+<p>​    这里还有个坑，要用Adobe Fireework CS6才能看到里面的图层没然后CS6居然停产了。。。好吧，是我坑爹了。这里还有最后一个坑，flag的图层透明度为100%，所以要修改后才能看见。</p>
+<h2 id="png"><a href="#png" class="headerlink" title="png"></a>png</h2><p>​    作为中南大学的学生，发现校徽都不完整，所以要想到时图片的高度被人修改过了，所以修改图片的高度即可看到flag。</p>
+<h2 id="can’t"><a href="#can’t" class="headerlink" title="can’t"></a>can’t</h2><p>​    这里可以通过命令行来创建文件，以此绕过文件名字限制。所以图形化什么的，还是命令行好用（滑稽）</p>
+<p>​    那个程序的源码如下：（够简陋，勿吐槽）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    FILE *fp;   <span class="comment">//  头文件#include &lt;stdio.h&gt;</span></span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    <span class="keyword">if</span>((fp=fopen(<span class="string">".flag"</span>,<span class="string">"r"</span>))==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"需要在当前目录下创建文件：.flag\n"</span>);</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">    	<span class="built_in">printf</span>(<span class="string">"恭喜获得flag：flag&#123;3o_ea3y_233333&#125; \n"</span>);</span><br><span class="line">    	<span class="built_in">cin</span> &gt;&gt; a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
     
@@ -525,21 +551,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/03/01/ACTF-Junior-2019-Official-WriteUP-of-mitu9527-s-Challenge/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/08/10/20180810-bugkuctf-wp/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/14/关于文件包含为ip地址/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
